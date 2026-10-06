@@ -1,0 +1,33 @@
+{
+  "name": "ssh-remote-mcp",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "常驻 SSH 长连接 MCP server（通用）：让 WorkBuddy 直接读写远端文件、执行远端命令，无需每次新建 SSH 连接。目标机由 SSH_REMOTE_* 环境变量决定",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "smoke": "node smoke-test.js",
+    "probe": "node mcp-probe.js",
+    "bg-selftest": "node bg-selftest.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ssh2": "^1.16.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackwangfeng/ssh-remote.git"
+  },
+  "license": "MIT",
+  "author": "jackwangfeng",
+  "keywords": [
+    "mcp",
+    "ssh",
+    "remote",
+    "ai-coding",
+    "automation"
+  ]
+}
